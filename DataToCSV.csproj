@@ -54,6 +54,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyExceptions.cs" />
     <Compile Include="MySql.cs" />
     <Compile Include="MySqlCredentials.cs" />
     <Compile Include="Program.cs" />

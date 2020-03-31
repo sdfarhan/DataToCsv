@@ -40,12 +40,14 @@
             this.TableNamesComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ConvertToCsvButton = new System.Windows.Forms.Button();
+            this.ConnectionErrorLabel = new System.Windows.Forms.Label();
+            this.SuccessMessageLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ServerURLLabel
             // 
             this.ServerURLLabel.AutoSize = true;
-            this.ServerURLLabel.Location = new System.Drawing.Point(76, 23);
+            this.ServerURLLabel.Location = new System.Drawing.Point(97, 60);
             this.ServerURLLabel.Name = "ServerURLLabel";
             this.ServerURLLabel.Size = new System.Drawing.Size(96, 17);
             this.ServerURLLabel.TabIndex = 0;
@@ -53,21 +55,21 @@
             // 
             // ServerUrlTextField
             // 
-            this.ServerUrlTextField.Location = new System.Drawing.Point(218, 20);
+            this.ServerUrlTextField.Location = new System.Drawing.Point(239, 57);
             this.ServerUrlTextField.Name = "ServerUrlTextField";
             this.ServerUrlTextField.Size = new System.Drawing.Size(256, 22);
             this.ServerUrlTextField.TabIndex = 0;
             // 
             // ServerPasswordTextField
             // 
-            this.ServerPasswordTextField.Location = new System.Drawing.Point(218, 116);
+            this.ServerPasswordTextField.Location = new System.Drawing.Point(239, 153);
             this.ServerPasswordTextField.Name = "ServerPasswordTextField";
             this.ServerPasswordTextField.Size = new System.Drawing.Size(256, 22);
             this.ServerPasswordTextField.TabIndex = 2;
             // 
             // ServerUserNameTextField
             // 
-            this.ServerUserNameTextField.Location = new System.Drawing.Point(218, 66);
+            this.ServerUserNameTextField.Location = new System.Drawing.Point(239, 103);
             this.ServerUserNameTextField.Name = "ServerUserNameTextField";
             this.ServerUserNameTextField.Size = new System.Drawing.Size(256, 22);
             this.ServerUserNameTextField.TabIndex = 1;
@@ -75,7 +77,7 @@
             // ServerUserName
             // 
             this.ServerUserName.AutoSize = true;
-            this.ServerUserName.Location = new System.Drawing.Point(126, 69);
+            this.ServerUserName.Location = new System.Drawing.Point(147, 106);
             this.ServerUserName.Name = "ServerUserName";
             this.ServerUserName.Size = new System.Drawing.Size(46, 17);
             this.ServerUserName.TabIndex = 4;
@@ -84,7 +86,7 @@
             // ServerPassword
             // 
             this.ServerPassword.AutoSize = true;
-            this.ServerPassword.Location = new System.Drawing.Point(84, 119);
+            this.ServerPassword.Location = new System.Drawing.Point(105, 156);
             this.ServerPassword.Name = "ServerPassword";
             this.ServerPassword.Size = new System.Drawing.Size(88, 17);
             this.ServerPassword.TabIndex = 5;
@@ -92,7 +94,7 @@
             // 
             // ServerConnectButton
             // 
-            this.ServerConnectButton.Location = new System.Drawing.Point(284, 206);
+            this.ServerConnectButton.Location = new System.Drawing.Point(305, 243);
             this.ServerConnectButton.Name = "ServerConnectButton";
             this.ServerConnectButton.Size = new System.Drawing.Size(138, 36);
             this.ServerConnectButton.TabIndex = 4;
@@ -103,7 +105,7 @@
             // ServerDatabaseLabel
             // 
             this.ServerDatabaseLabel.AutoSize = true;
-            this.ServerDatabaseLabel.Location = new System.Drawing.Point(91, 166);
+            this.ServerDatabaseLabel.Location = new System.Drawing.Point(112, 203);
             this.ServerDatabaseLabel.Name = "ServerDatabaseLabel";
             this.ServerDatabaseLabel.Size = new System.Drawing.Size(81, 17);
             this.ServerDatabaseLabel.TabIndex = 7;
@@ -111,7 +113,7 @@
             // 
             // ServerDatabaseTextField
             // 
-            this.ServerDatabaseTextField.Location = new System.Drawing.Point(218, 166);
+            this.ServerDatabaseTextField.Location = new System.Drawing.Point(239, 203);
             this.ServerDatabaseTextField.Name = "ServerDatabaseTextField";
             this.ServerDatabaseTextField.Size = new System.Drawing.Size(256, 22);
             this.ServerDatabaseTextField.TabIndex = 3;
@@ -122,7 +124,7 @@
             this.TableNamesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TableNamesComboBox.Enabled = false;
             this.TableNamesComboBox.FormattingEnabled = true;
-            this.TableNamesComboBox.Location = new System.Drawing.Point(218, 293);
+            this.TableNamesComboBox.Location = new System.Drawing.Point(239, 330);
             this.TableNamesComboBox.Name = "TableNamesComboBox";
             this.TableNamesComboBox.Size = new System.Drawing.Size(256, 24);
             this.TableNamesComboBox.TabIndex = 5;
@@ -130,7 +132,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 296);
+            this.label1.Location = new System.Drawing.Point(27, 333);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 17);
             this.label1.TabIndex = 10;
@@ -138,7 +140,7 @@
             // 
             // ConvertToCsvButton
             // 
-            this.ConvertToCsvButton.Location = new System.Drawing.Point(284, 340);
+            this.ConvertToCsvButton.Location = new System.Drawing.Point(305, 377);
             this.ConvertToCsvButton.Name = "ConvertToCsvButton";
             this.ConvertToCsvButton.Size = new System.Drawing.Size(138, 40);
             this.ConvertToCsvButton.TabIndex = 11;
@@ -146,11 +148,31 @@
             this.ConvertToCsvButton.UseVisualStyleBackColor = true;
             this.ConvertToCsvButton.Click += new System.EventHandler(this.ConvertToCsvButton_Click);
             // 
+            // ConnectionErrorLabel
+            // 
+            this.ConnectionErrorLabel.AutoSize = true;
+            this.ConnectionErrorLabel.ForeColor = System.Drawing.Color.Red;
+            this.ConnectionErrorLabel.Location = new System.Drawing.Point(239, 13);
+            this.ConnectionErrorLabel.Name = "ConnectionErrorLabel";
+            this.ConnectionErrorLabel.Size = new System.Drawing.Size(0, 17);
+            this.ConnectionErrorLabel.TabIndex = 12;
+            // 
+            // SuccessMessageLabel
+            // 
+            this.SuccessMessageLabel.AutoSize = true;
+            this.SuccessMessageLabel.ForeColor = System.Drawing.Color.Green;
+            this.SuccessMessageLabel.Location = new System.Drawing.Point(239, 424);
+            this.SuccessMessageLabel.Name = "SuccessMessageLabel";
+            this.SuccessMessageLabel.Size = new System.Drawing.Size(0, 17);
+            this.SuccessMessageLabel.TabIndex = 13;
+            // 
             // TablesComboBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 609);
+            this.Controls.Add(this.SuccessMessageLabel);
+            this.Controls.Add(this.ConnectionErrorLabel);
             this.Controls.Add(this.ConvertToCsvButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TableNamesComboBox);
@@ -184,6 +206,8 @@
         private System.Windows.Forms.ComboBox TableNamesComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ConvertToCsvButton;
+        private System.Windows.Forms.Label ConnectionErrorLabel;
+        private System.Windows.Forms.Label SuccessMessageLabel;
     }
 }
 

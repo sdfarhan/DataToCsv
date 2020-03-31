@@ -11,13 +11,13 @@ namespace DataToCSV
     {
         string path = $"C:\\Users\\SF185122\\databases\\DataToCsv\\";
 
-        public CreateCsvFile(List<List<string>> Data)
+        public CreateCsvFile(List<List<string>> Data,string TableName)
         {
-            using (StreamWriter SW = new StreamWriter(path + "data.csv"))
+            using (StreamWriter SW = new StreamWriter(path + $"{TableName}-data.csv"))
             {
                 foreach(List<string> EachRow in Data)
                 {
-                    for(int i=0;i<EachRow.Count - 2; i++)
+                    for(int i=0;i<EachRow.Count - 1; i++)
                     {
                         SW.Write($"{EachRow[i]},");
                     }

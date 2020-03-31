@@ -38,7 +38,7 @@ namespace DataToCSV
             Database = serverInfo.ServerDatabase;
             User = serverInfo.ServerUser;
             Password = serverInfo.ServerPassword;
-            Connection = new MySqlConnection(GetConnectionString());
+                Connection = new MySqlConnection(GetConnectionString());            
         }
         private void Initialize()
         {
@@ -60,6 +60,7 @@ namespace DataToCSV
                 //The two most common error numbers when connecting are as follows:
                 //0: Cannot connect to server.
                 //1045: Invalid user name and/or password.
+                throw new InvalidCredentialsException(EX.Message);
                 switch (EX.Number)
                 {
                     case 0:
@@ -78,7 +79,7 @@ namespace DataToCSV
         {
             string query = $"select * from {Table}";
             MySqlCommand cmd = new MySqlCommand(query, Connection);
-            List<List<string>> MyData = new List<List<string>>();
+                List<List<string>> MyData = new List<List<string>>();
             MyData.Add(GetColumns(Table));
             if (this.OpenConnection())
             {
