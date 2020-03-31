@@ -1,0 +1,17 @@
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\DataToCSV.exe.config
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\DataToCSV.exe
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\DataToCSV.pdb
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\MySql.Data.dll
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\Google.Protobuf.dll
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\Renci.SshNet.dll
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\bin\Debug\MySql.Data.xml
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\obj\Debug\DataToCSV.csprojAssemblyReference.cache
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\obj\Debug\DataToCSV.TablesComboBox.resources
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\obj\Debug\DataToCSV.Properties.Resources.resources
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\obj\Debug\DataToCSV.csproj.GenerateResource.cache
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\obj\Debug\DataToCSV.csproj.CoreCompileInputs.cache
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\obj\Debug\DataToCSV.csproj.CopyComplete
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\obj\Debug\DataToCSV.exe
+C:\Users\SF185122\source\repos\DataToCSV\DataToCSV\obj\Debug\DataToCSV.pdb
